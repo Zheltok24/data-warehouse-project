@@ -71,7 +71,7 @@ copy bronze.crm_cust_info (cst_id,
 	cst_material_status,
 	cst_gndr ,
 	cst_create_date)
-FROM 'D:\Lessons_py\source_crm\cust_info.csv'
+FROM 'datasets\source_crm\cust_info.csv'
 DELIMITER ','
 CSV HEADER;
 
@@ -82,7 +82,7 @@ copy bronze.crm_prd_info (prd_id,
     prd_line     ,
     prd_start_dt ,
     prd_end_dt   )
-FROM 'D:\Lessons_py\source_crm\prd_info.csv'
+FROM 'datasets\source_crm\prd_info.csv'
 DELIMITER ','
 CSV HEADER;
 
@@ -95,7 +95,7 @@ copy bronze.crm_sales_details (sls_ord_num,
     sls_sales    ,
     sls_quantity ,
     sls_price    )
-FROM 'D:\Lessons_py\source_crm\sales_details.csv'
+FROM 'datasets\source_crm\sales_details.csv'
 DELIMITER ','
 CSV HEADER;
 
@@ -104,7 +104,7 @@ copy bronze.erp_loc_a101 (
     cid    ,
     cntry 
 )
-FROM 'D:\Lessons_py\source_erp\loc_a101.csv'
+FROM 'datasets\source_erp\loc_a101.csv'
 DELIMITER ','
 CSV HEADER;
 
@@ -113,7 +113,7 @@ copy bronze.erp_cust_az12 (
     bdate  ,
     gen    
 )
-FROM 'D:\Lessons_py\source_erp\cust_az12.csv'
+FROM 'datasets\source_erp\cust_az12.csv'
 DELIMITER ','
 CSV HEADER;
 
@@ -123,6 +123,6 @@ copy  bronze.erp_px_cat_g1v2 (
     subcat       ,
     maintenance  
 )
-FROM 'D:\Lessons_py\source_erp\px_cat_g1v2.csv'
+FROM 'datasets\source_erp\px_cat_g1v2.csv'
 DELIMITER ','
 CSV HEADER;
