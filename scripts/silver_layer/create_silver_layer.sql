@@ -38,3 +38,27 @@ CREATE TABLE silver.crm_sales_details (
     sls_price       INT,
     dwh_create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+
+DROP TABLE IF EXISTS silver.erp_loc_a101;
+CREATE TABLE silver.erp_loc_a101 (
+    cid             VARCHAR(50),
+    cntry           VARCHAR(50),
+    dwh_create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+DROP TABLE IF EXISTS silver.erp_cust_az12;
+CREATE TABLE silver.erp_cust_az12 (
+    cid             VARCHAR(50),
+    bdate           DATE,
+    gen             VARCHAR(50),
+    dwh_create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+DROP TABLE IF EXISTS silver.erp_px_cat_g1v2;
+CREATE TABLE silver.erp_px_cat_g1v2 (
+    id              VARCHAR(50),
+    cat             VARCHAR(50),
+    subcat          VARCHAR(50),
+    maintenance     VARCHAR(50),
+    dwh_create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
